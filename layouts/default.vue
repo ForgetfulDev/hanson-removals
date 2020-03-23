@@ -5,7 +5,7 @@
         <div class="col-lg-6 col-md-12">
           <div class="row">
             <div class="col">
-              <img class="img-fluid" src="~/assets/images/hansonremovals-logo.jpg" />
+              <img class="img-fluid" src="~/assets/images/hansonremovals-logo.jpg" alt="Hanson Removals Logo"/>
             </div>
           </div>
           <div class="row">
@@ -25,7 +25,7 @@
           </div>
           <div class="row">
             <div class="col">
-              <img src="~/assets/images/red-phone-sillouette.png" />
+              <img src="~/assets/images/red-phone-sillouette.png" alt="Red phone silhouette" />
             </div>
             <div class="col">
               <a id="heading-phone" class="primary" href="tel:03%20453%206575">03 453 6575</a>
@@ -73,12 +73,33 @@
         </button>
         <div class="collapse navbar-collapse primary-bg" id="navbarSupportedContent">
           <ul class="navbar-nav m-auto">
-            <li v-for="route in $router.options.routes" :key="route.path">
+            <!-- <li v-for="route in $router.options.routes" :key="route.path">
               <nuxt-link
                 class="nav-link text-white pl-2"
                 :active-class="route.path"
                 :to="route.path"
               >{{ route.name == 'index' ? 'HOME' : route.name.toUpperCase() }}</nuxt-link>
+            </li> -->
+            <li>
+              <a class="nav-link text-white pl-2" href="/">HOME</a>
+            </li>
+            <li>
+              <a class="nav-link text-white pl-2" href="/about">ABOUT</a>
+            </li>
+            <li>
+              <a class="nav-link text-white pl-2" href="/residential">RESIDENTIAL</a>
+            </li>
+            <li>
+              <a class="nav-link text-white pl-2" href="/commercial">COMMERCIAL</a>
+            </li>
+            <li>
+              <a class="nav-link text-white pl-2" href="/storage">STORAGE</a>
+            </li>
+            <li>
+              <a class="nav-link text-white pl-2" href="/enquiry">ENQUIRY</a>
+            </li>
+            <li>
+              <a class="nav-link text-white pl-2" href="/contact">CONTACT</a>
             </li>
           </ul>
         </div>

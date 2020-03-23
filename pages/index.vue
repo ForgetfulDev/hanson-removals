@@ -3,7 +3,17 @@
     <div class="col">
       <div class="row hero m-2 p-2">
         <div class="col-lg-6 col-md-12">
-          <img class="img-fluid" src="~/assets/images/hero-slide-1.jpg" />
+          <vue-flux
+            :options="vfOptions"
+            :images="vfImages"
+            :transitions="vfTransitions"
+            ref="slider"
+          >
+            <template v-slot:preloader>
+              <flux-preloader />
+            </template>
+          </vue-flux>
+          <!-- <img class="img-fluid" src="~/assets/images/hero-slide-1.jpg" /> -->
         </div>
         <div class="col-lg-6 col-md-12">
           <h2 class="primary main">
@@ -122,6 +132,28 @@
   </div>
 </template>
 
+<script>
+import {
+   VueFlux,
+   FluxPreloader
+} from 'vue-flux';
+
+export default {
+   components: {
+      VueFlux,
+      FluxPreloader,
+   },
+
+   data: () => ({
+      vfOptions: {
+         autoplay: true
+      },
+      vfImages: [ '/images/hero-slide-4.png', '/images/hero-slide-2.jpg', '/images/hero-slide-1.jpg', '/images/hero-slide-3.jpg' ],
+      vfTransitions: [ 'blocks1', 'blocks2', 'blocks1', 'blocks2' ],
+   }),
+}
+</script>
+
 <style lang="sass" scoped>
 .hero
   border: 1px solid #a6a6a6
@@ -135,6 +167,5 @@
   height: 23px
   width: 187px
   background-image: url("~assets/images/find-out-more-roll.png")
-
 </style>
 

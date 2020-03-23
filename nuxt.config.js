@@ -11,11 +11,11 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content: 'House Movers Dunedin | Home Removalists Dunedin: Residential &amp; commercial relocations, storage and removals throughout Dunedin &amp; Christchurch'
       }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/png', href: '/favicon.png' },
       { rel: "stylesheet", type: "text/css", href: "/css/bootstrap.min.css" }
     ],
     script: [
