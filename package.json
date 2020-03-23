@@ -14,7 +14,8 @@
   "dependencies": {
     "@nuxtjs/pwa": "^3.0.0-0",
     "bootstrap-icons": "^1.0.0-alpha3",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "vue-flux": "^6.0.2"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.0",
